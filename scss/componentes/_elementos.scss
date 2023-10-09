@@ -1,4 +1,8 @@
-/*Cuerpo*/
+.tcentro{
+    text-align: center;
+    display:grid;
+    justify-content: center;
+}
 #contenedor {
     display: flex;
     flex-direction: column;
@@ -33,23 +37,39 @@ hr {
     vertical-align: top;
     text-align: center;
     margin-bottom: 40px;
+    margin: 20px;
 }
 .sombra {
     box-shadow: 0px 10px 19px -5px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: 0px 10px 19px -5px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 0px 10px 19px -5px rgba(0, 0, 0, 0.75);
 }
+.container{
+    max-width: 90%;
+    margin:auto;
+    .sombra img{
+        width:100%;
+      }
+  }
+  .auto{
+    display:block;
+    margin: auto;
+  }
 /*TABLET*/
 @media screen and (min-width: 768px) {
+    .tcentro{
+        display:flex;
+    }
     #productos-tienda {
         display: flex;
-        justify-content: space-evenly;
+        /*justify-content: space-evenly;*/
         flex-wrap: wrap;
     }
     .data {
-        width: 30%;
+        width: 27%;
     }
 }
+
 /*DESKTOP*/
 @media screen and (min-width: 1024px) {
     #contenedor {
@@ -82,6 +102,6 @@ hr {
         display: flex;
     }
     .data {
-        width: 23%;
+        width: 20%;
     }
 }
