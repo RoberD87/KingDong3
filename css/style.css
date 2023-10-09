@@ -5,6 +5,7 @@
   font-family: "Silkscreen", cursive;
 }
 
+/*Fuentes variables*/
 /*Estilos NavBar*/
 /*MOBILE*/
 nav ul {
@@ -14,8 +15,17 @@ nav ul a,
 nav ul a:visited {
   color: black;
 }
-nav ul a:hover:not(#logo) {
-  border-bottom: 3px solid #fdc300;
+nav ul a::after {
+  content: "";
+  display: block;
+  height: 3px;
+  background-color: #fdc300;
+  transform: scale(0, 1);
+  transform-origin: left;
+  transition: transform 0.25s;
+}
+nav ul a:hover:not(#logo)::after {
+  transform: scale(1, 1);
 }
 nav ul li a:not(#logo) {
   display: none;
@@ -174,6 +184,29 @@ hr {
   margin: auto;
 }
 
+input, textarea {
+  display: block;
+  max-width: 600px;
+  border: 2px solid #fdc300;
+  font-size: 1.2em;
+  height: 30px;
+}
+
+#tyc {
+  width: 20px;
+  float: left;
+  margin-right: 10px;
+}
+
+form {
+  max-width: 650px;
+  margin: auto;
+}
+
+textarea {
+  height: 150px;
+}
+
 /*TABLET*/
 @media screen and (min-width: 768px) {
   .tcentro {
@@ -192,6 +225,9 @@ hr {
 @media screen and (min-width: 1024px) {
   #contenedor {
     width: 100%;
+  }
+  .container {
+    max-width: 900px;
   }
   .grid {
     width: 100%;

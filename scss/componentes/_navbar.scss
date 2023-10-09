@@ -7,9 +7,17 @@ nav {
         a:visited {
             color: black
         }
-
-        a:hover:not(#logo) {
-            border-bottom: 3px solid #fdc300;
+        a::after {
+            content: "";
+            display: block;
+            height: 3px;
+            background-color: $amarillo;
+            transform: scale(0,1);
+            transform-origin: left;
+            transition: transform .25s;
+        }
+        a:hover:not(#logo)::after {
+            transform: scale(1,1);
         }
 
         li a:not(#logo) {
