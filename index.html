@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,8 +8,10 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="img/favicon.ico">
     <meta name="description" content="King Dong. Timbres personalizados con tu tono favorito">
-    <meta name="keywords" content="timbres, timbres king dong, timbres personalizados, timbres musicales, king dong, ringtones">
+    <meta name="keywords"
+        content="timbres, timbres king dong, timbres personalizados, timbres musicales, king dong, ringtones">
 </head>
+
 <body>
     <header>
         <nav class="silk">
@@ -21,7 +24,17 @@
                 <li><a href="pages/contacto.html">Contacto</a></li>
             </ul>
         </nav>
-		<img src="img/menu.png" alt="Ícono de menú" id="icon-menu">
+        <a href="javascript:abrir();"><img src="img/menu.png" alt="Ícono de menú" id="icon-menu"></a>
+        <nav class="silk mobile" id="mobile" style="display:none;">
+            <ul>
+                <li><a href="javascript:cerrar();">X</a></li>
+                <li><a href="pages/nosotros.html">Nosotros</a></li>
+                <li><a href="pages/productos.html">Productos</a></li>
+                <li><a href="pages/tienda.html">Tienda</a></li>
+                <li><a href="">Cómo instalarlo</a></li>
+                <li><a href="pages/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
         <h1>TIMBREEEEEE !!!</h1>
     </header>
     <main>
@@ -50,6 +63,18 @@
         </aside>
     </main>
     <footer>
-    </footer>    
+    </footer>
+    <script languague="javascript">
+        function abrir() {
+            nav = document.getElementById('mobile');
+            nav.style.display = '';
+        }
+
+        function cerrar() {
+            nav = document.getElementById('mobile');
+            nav.style.display = 'none';
+        }
+    </script>
 </body>
+
 </html>

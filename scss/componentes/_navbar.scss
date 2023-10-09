@@ -7,22 +7,52 @@ nav {
         a:visited {
             color: black
         }
+
         a::after {
             content: "";
             display: block;
             height: 3px;
             background-color: $amarillo;
-            transform: scale(0,1);
+            transform: scale(0, 1);
             transform-origin: left;
             transition: transform .25s;
         }
+
         a:hover:not(#logo)::after {
-            transform: scale(1,1);
+            transform: scale(1, 1);
         }
 
         li a:not(#logo) {
             display: none;
         }
+    }
+}
+
+nav.mobile {
+    background-color: black;
+    opacity: .9;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+
+    li a:not(#logo), li {
+        display: block;
+        color: $amarillo;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    li {
+        display: block;
+        font-size: 1.5em;
+        padding-top: 1em;
     }
 }
 
@@ -42,14 +72,20 @@ a {
     right: 5%;
     top: 5%;
 }
+
 /*DESKTOP*/
 @media screen and (min-width: 1024px) {
+    nav.mobile {
+        display: none;
+    }
     nav ul li a:not(#logo) {
         display: inline;
     }
+
     #icon-menu {
         display: none;
     }
+
     ul>li>a>img {
         margin-right: 30px;
     }

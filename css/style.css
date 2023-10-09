@@ -31,6 +31,31 @@ nav ul li a:not(#logo) {
   display: none;
 }
 
+nav.mobile {
+  background-color: black;
+  opacity: 0.9;
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+nav.mobile li a:not(#logo), nav.mobile li {
+  display: block;
+  color: #fdc300;
+}
+nav.mobile ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+nav.mobile li {
+  display: block;
+  font-size: 1.5em;
+  padding-top: 1em;
+}
+
 li {
   display: inline-block;
   padding-left: 10px;
@@ -50,6 +75,9 @@ a {
 
 /*DESKTOP*/
 @media screen and (min-width: 1024px) {
+  nav.mobile {
+    display: none;
+  }
   nav ul li a:not(#logo) {
     display: inline;
   }
