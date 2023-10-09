@@ -1,0 +1,32 @@
+nav ul {
+  list-style: none;
+}
+nav ul a,
+nav ul a:visited {
+  color: black;
+}
+nav ul a:hover:not(#logo) {
+  border-bottom: 3px solid #fdc300;
+}
+nav ul li a:not(#logo) {
+  display: none;
+}
+
+li {
+  display: inline-block;
+  padding-left: 10px;
+  vertical-align: middle;
+}
+
+a {
+  text-decoration: none;
+  vertical-align: center;
+}
+
+#icon-menu {
+  position: absolute;
+  right: 5%;
+  top: 5%;
+}
+
+/*# sourceMappingURL=style.css.map */
