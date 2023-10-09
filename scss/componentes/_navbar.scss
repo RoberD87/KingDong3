@@ -1,3 +1,4 @@
+/*MOBILE*/
 nav {
     ul {
         list-style: none;
@@ -32,4 +33,16 @@ a {
     position: absolute;
     right: 5%;
     top: 5%;
+}
+/*DESKTOP*/
+@media screen and (min-width: 1024px) {
+    nav ul li a:not(#logo) {
+        display: inline;
+    }
+    #icon-menu {
+        display: none;
+    }
+    ul>li>a>img {
+        margin-right: 30px;
+    }
 }

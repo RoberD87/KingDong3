@@ -1,6 +1,12 @@
 /*Fuentes tipográficas*/
-@import "./base/fonts";
+@import "./componentes/fonts";
 /*Estilos NavBar*/
 @import "./componentes/navbar";
-/*Estilos Foter*/
+/*Estilos Header*/
+@import "./componentes/header";
+/*Estilos Footer*/
 @import "./componentes/footer";
+/*Estilos Generico*/
+@import "./componentes/generico";
+/*Estilos Elementos base*/
+@import "./componentes/elementos";

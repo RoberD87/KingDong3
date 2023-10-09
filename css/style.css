@@ -6,6 +6,7 @@
 }
 
 /*Estilos NavBar*/
+/*MOBILE*/
 nav ul {
   list-style: none;
 }
@@ -37,7 +38,32 @@ a {
   top: 5%;
 }
 
-/*Estilos Foter*/
+/*DESKTOP*/
+@media screen and (min-width: 1024px) {
+  nav ul li a:not(#logo) {
+    display: inline;
+  }
+  #icon-menu {
+    display: none;
+  }
+  ul > li > a > img {
+    margin-right: 30px;
+  }
+}
+/*Estilos Header*/
+/*MOBILE*/
+header {
+  padding-top: 5%;
+}
+
+/*DESKTOP*/
+@media screen and (min-width: 1024px) {
+  header {
+    padding-top: 2%;
+  }
+}
+/*Estilos Footer*/
+/*MOBILE*/
 footer {
   height: 250px;
   background-image: url(../img/logo-pie.png);
@@ -50,6 +76,127 @@ footer {
   footer {
     height: 500px;
     background-position-y: bottom;
+  }
+}
+/*Estilos Generico*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*MOBILE*/
+body {
+  font-size: 1em;
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+h3 {
+  margin: 15px 0px;
+}
+
+/*TABLET*/
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 1.2em;
+  }
+}
+/*Estilos Elementos base*/
+/*Cuerpo*/
+#contenedor {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 0px auto;
+}
+
+img {
+  max-width: 100%;
+}
+
+.button {
+  background-color: #fdc300;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  color: black;
+  margin: 20px 0;
+}
+
+.separador {
+  width: 100%;
+  clear: both;
+}
+
+hr {
+  border-color: #fdc300;
+  width: 50px;
+  margin: 20px auto 20px auto;
+}
+
+.data {
+  display: inline-block;
+  padding: 5px 5px 10px 5px;
+  vertical-align: top;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.sombra {
+  box-shadow: 0px 10px 19px -5px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 10px 19px -5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 10px 19px -5px rgba(0, 0, 0, 0.75);
+}
+
+/*TABLET*/
+@media screen and (min-width: 768px) {
+  #productos-tienda {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  .data {
+    width: 30%;
+  }
+}
+/*DESKTOP*/
+@media screen and (min-width: 1024px) {
+  #contenedor {
+    width: 100%;
+  }
+  .grid {
+    width: 100%;
+    display: grid;
+    grid-area: productos;
+    grid-template-areas: "Izq Der";
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+  .Izq {
+    grid-area: Izq;
+  }
+  .Der {
+    grid-area: Der;
+  }
+  .separador {
+    display: none;
+  }
+  #productos .grid:first-child .Izq,
+  #productos .grid:last-child .Der {
+    padding: 50px;
+  }
+  #productos .grid:first-child .Der {
+    display: flex;
+  }
+  .data {
+    width: 23%;
   }
 }
 

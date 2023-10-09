@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*MOBILE*/
+body {
+    font-size: 1em;
+    font-family: 'Poppins', sans-serif;
+}
+h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+h3 {
+    margin: 15px 0px;
+}
+/*TABLET*/
+@media screen and (min-width: 768px) {
+    body {
+        font-size: 1.2em;
+    }
+}
