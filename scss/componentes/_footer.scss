@@ -1,0 +1,13 @@
+footer {
+    height: 250px;
+    background-image: url(../img/logo-pie.png);
+    background-size: cover;
+    background-position-x: right;
+}
+/*DESKTOP*/
+@media screen and (min-width: 1024px) {
+    footer {
+        height: 500px;
+        background-position-y: bottom;
+    }
+}

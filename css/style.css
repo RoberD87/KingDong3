@@ -1,3 +1,11 @@
+@charset "UTF-8";
+/*Fuentes tipográficas*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Silkscreen:wght@400;700&display=swap");
+.silk {
+  font-family: "Silkscreen", cursive;
+}
+
+/*Estilos NavBar*/
 nav ul {
   list-style: none;
 }
@@ -27,6 +35,22 @@ a {
   position: absolute;
   right: 5%;
   top: 5%;
+}
+
+/*Estilos Foter*/
+footer {
+  height: 250px;
+  background-image: url(../img/logo-pie.png);
+  background-size: cover;
+  background-position-x: right;
+}
+
+/*DESKTOP*/
+@media screen and (min-width: 1024px) {
+  footer {
+    height: 500px;
+    background-position-y: bottom;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
