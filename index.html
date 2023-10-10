@@ -14,6 +14,7 @@
 
 <body>
     <header>
+        <!--INICIO Menú principal-->
         <nav class="silk">
             <ul>
                 <li><a href="index.html" id="logo"><img src="img/logo.jpg" alt="Logo de King Dong"></a></li>
@@ -24,6 +25,8 @@
                 <li><a href="pages/contacto.html">Contacto</a></li>
             </ul>
         </nav>
+        <!--FIN Menú principal-->
+        <!--INICIO Menú mobile-->
         <a href="javascript:abrir();"><img src="img/menu.png" alt="Ícono de menú" id="icon-menu"></a>
         <nav class="silk mobile" id="mobile" style="display:none;">
             <ul>
@@ -35,12 +38,16 @@
                 <li><a href="pages/contacto.html">Contacto</a></li>
             </ul>
         </nav>
+        <!--FIN Menú mobile-->
         <h1>TIMBREEEEEE !!!</h1>
     </header>
-    <main>
+    <main>}
+        <!--INICIO Banner home-->
         <section>
             <img src="img/banner.jpg" alt="Imagen de timbre y packaging" class="banner">
         </section>
+        <!--FIN Banner home-->
+        <!--INICIO Tarjetas-->
         <aside class="tcentro">
             <div class="data sombra">
                 <img src="img/estrella.png" alt="Ícono de estrella pixelada">
@@ -58,12 +65,14 @@
                 <small>Se puede conectar en cualquier lado y reemplaza tu antiguo timbre</small>
             </div>
         </aside>
+        <!--FIN Tarjetas-->
         <aside class="tcentro">
             <a href="pages/productos.html" class="button">¡Conocelos!</a>
         </aside>
     </main>
     <footer>
     </footer>
+    <!--INICIO Script del menú hamburguesa-->
     <script languague="javascript">
         function abrir() {
             nav = document.getElementById('mobile');
@@ -75,6 +84,7 @@
             nav.style.display = 'none';
         }
     </script>
+    <!--FIN Script del menú hamburguesa-->
 </body>
 
 </html>

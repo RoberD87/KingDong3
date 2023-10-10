@@ -11,9 +11,11 @@
 
 <body>
     <header>
+        <!--INICIO Menú principal-->
         <nav class="silk">
             <ul>
                 <li><a href="../index.html" id="logo"><img src="../img/logo.jpg" alt="Logo de King Dong"></a></li>
+                <li><a href="../index.html">Home</a></li>
                 <li><a href="nosotros.html">Nosotros</a></li>
                 <li><a href="productos.html">Productos</a></li>
                 <li><a href="tienda.html">Tienda</a></li>
@@ -21,10 +23,13 @@
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
+        <!--FIN Menú principal-->
+        <!--INICIO Menú mobile-->
         <a href="javascript:abrir();"><img src="../img/menu.png" alt="Ícono de menú" id="icon-menu"></a>
         <nav class="silk mobile" id="mobile" style="display:none;">
             <ul>
                 <li><a href="javascript:cerrar();">X</a></li>
+                <li><a href="../index.html">Home</a></li>
                 <li><a href="nosotros.html">Nosotros</a></li>
                 <li><a href="productos.html">Productos</a></li>
                 <li><a href="tienda.html">Tienda</a></li>
@@ -32,6 +37,7 @@
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
+        <!--FIN Menú mobile-->
         <h1>Contacto</h1>
     </header>
     <main>
@@ -54,6 +60,7 @@
     </main>
     <footer>
     </footer>
+    <!--INICIO Script del menú hamburguesa-->
     <script languague="javascript">
         function abrir() {
             nav = document.getElementById('mobile');
@@ -65,6 +72,7 @@
             nav.style.display = 'none';
         }
     </script>
+    <!--FIN Script del menú hamburguesa-->
 </body>
 
 </html>

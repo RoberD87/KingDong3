@@ -14,9 +14,11 @@
 
 <body>
     <header>
+        <!--INICIO Menú principal-->
         <nav class="silk">
             <ul>
                 <li><a href="../index.html" id="logo"><img src="../img/logo.jpg" alt="Logo de King Dong"></a></li>
+                <li><a href="../index.html">Home</a></li>
                 <li><a href="nosotros.html">Nosotros</a></li>
                 <li><a href="productos.html">Productos</a></li>
                 <li><a href="tienda.html">Tienda</a></li>
@@ -24,10 +26,13 @@
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
+        <!--FIN Menú principal-->
+        <!--INICIO Menú mobile-->
         <a href="javascript:abrir();"><img src="../img/menu.png" alt="Ícono de menú" id="icon-menu"></a>
         <nav class="silk mobile" id="mobile" style="display:none;">
             <ul>
                 <li><a href="javascript:cerrar();">X</a></li>
+                <li><a href="../index.html">Home</a></li>
                 <li><a href="nosotros.html">Nosotros</a></li>
                 <li><a href="productos.html">Productos</a></li>
                 <li><a href="tienda.html">Tienda</a></li>
@@ -35,10 +40,12 @@
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
+        <!--FIN Menú mobile-->
         <h1>Nosotros</h1>
     </header>
     <main>
         <div class="container">
+            <!--INICIO Reseña-->
             <section>
                 <article class="todo">
                     <p>Los King Dong son una artesanía del siglo XXI. Usamos impresiones 3D, componentes electrónicos de
@@ -48,6 +55,8 @@
                     <img src="../img/banner-k.jpg" alt="Imagen ilustrativa con el ícono de King Dong" class="auto">
                 </article>
             </section>
+            <!--FIN Reseña-->
+            <!--INICIO Testimonios-->
             <aside>
                 <h3>Testimonios</h3>
                 <article>
@@ -66,11 +75,12 @@
                     <small>@sanchys3d</small>
                 </article>
             </aside>
-
+            <!--INICIO Testimonios-->
         </div>
     </main>
     <footer>
     </footer>
+    <!--INICIO Script del menú hamburguesa-->
     <script languague="javascript">
         function abrir() {
             nav = document.getElementById('mobile');
@@ -82,6 +92,7 @@
             nav.style.display = 'none';
         }
     </script>
+    <!--FIN Script del menú hamburguesa-->
 </body>
 
 </html>

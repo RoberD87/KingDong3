@@ -14,20 +14,11 @@
 
 <body>
     <header>
+        <!--INICIO Menú principal-->
         <nav class="silk">
             <ul>
                 <li><a href="../index.html" id="logo"><img src="../img/logo.jpg" alt="Logo de King Dong"></a></li>
-                <li><a href="">Nosotros</a></li>
-                <li><a href="productos.html">Productos</a></li>
-                <li><a href="tienda.html">Tienda</a></li>
-                <li><a href="">Cómo instalarlo</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-        <a href="javascript:abrir();"><img src="../img/menu.png" alt="Ícono de menú" id="icon-menu"></a>
-        <nav class="silk mobile" id="mobile" style="display:none;">
-            <ul>
-                <li><a href="javascript:cerrar();">X</a></li>
+                <li><a href="../index.html">Home</a></li>
                 <li><a href="nosotros.html">Nosotros</a></li>
                 <li><a href="productos.html">Productos</a></li>
                 <li><a href="tienda.html">Tienda</a></li>
@@ -35,10 +26,26 @@
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
+        <!--FIN Menú principal-->
+        <!--INICIO Menú mobile-->
+        <a href="javascript:abrir();"><img src="../img/menu.png" alt="Ícono de menú" id="icon-menu"></a>
+        <nav class="silk mobile" id="mobile" style="display:none;">
+            <ul>
+                <li><a href="javascript:cerrar();">X</a></li>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="tienda.html">Tienda</a></li>
+                <li><a href="">Cómo instalarlo</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <!--FIN Menú mobile-->
         <h1>Nuestros productos</h1>
     </header>
     <main id="contenedor">
         <section id="productos">
+            <!--INICIO Producto LVL1-->
             <article class="grid">
                 <div class="Izq">
                     <h2>LVL 1</h2>
@@ -51,9 +58,11 @@
                     <img src="../img/lvl1.jpg" alt="Foto de timbre modelo Lvl1">
                 </div>
             </article>
+            <!--FIN Producto LVL1-->
             <div class="separador">
                 <hr>
             </div>
+            <!--INICIO Producto DOM-->
             <article class="grid">
                 <div class="Izq">
                     <img src="../img/dom.jpg" alt="Foto de timbre modelo Dom">
@@ -66,9 +75,11 @@
                     <a href="tienda.html" class="button">¡Lo quiero!</a>
                 </div>
             </article>
+            <!--FIN Producto DOM-->
         </section>
     </main>
     <footer></footer>
+    <!--INICIO Script del menú hamburguesa-->
     <script languague="javascript">
         function abrir() {
             nav = document.getElementById('mobile');
@@ -80,6 +91,7 @@
             nav.style.display = 'none';
         }
     </script>
+    <!--FIN Script del menú hamburguesa-->
 </body>
 
 </html>
