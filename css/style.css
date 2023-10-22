@@ -156,6 +156,7 @@ h3 {
   flex-direction: column;
   width: 90%;
   margin: 0px auto;
+  max-width: 1500px;
 }
 
 img {
@@ -233,8 +234,43 @@ form {
 
 textarea {
   height: 150px;
+  margin-bottom: 20px;
 }
 
+.bounce2 {
+  animation: bounce2 2s ease infinite;
+}
+
+#banner {
+  background-image: url("../img/banner.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+}
+
+q {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.formulario {
+  max-width: 400px;
+}
+.formulario a {
+  display: block;
+}
+
+@keyframes bounce2 {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
 /*TABLET*/
 @media screen and (min-width: 768px) {
   .tcentro {
@@ -247,6 +283,9 @@ textarea {
   }
   .data {
     width: 27%;
+  }
+  #banner {
+    height: 400px;
   }
 }
 /*DESKTOP*/
@@ -287,6 +326,9 @@ textarea {
   }
   .data {
     width: 20%;
+  }
+  #banner {
+    height: 500px;
   }
 }
 
